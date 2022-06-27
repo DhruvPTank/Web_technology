@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            s1=prompt("enter the word");
+                fa=s1.indexOf("a");
+                fe=s1.indexOf("e");
+                fi=s1.indexOf("i");
+                fo=s1.indexOf("o");
+                fu=s1.indexOf("u");
+
+                if(fa<0){
+                    fa = 10000;
+                }
+                if(fe<0){
+                    fe = 10000;
+                }if(fi<0){
+                    fi = 10000;
+                }
+                if(fo<0){
+                    fo = 10000;
+                }
+                if(fu<0){
+                    fu = 10000;
+                }
+
+                la=s1.lastIndexOf("a");
+                le=s1.lastIndexOf("e");
+                li=s1.lastIndexOf("i");
+                lo=s1.lastIndexOf("o");
+                lu=s1.lastIndexOf("u");
+
+                num1=Math.min(fa,fe,fi,fo,fu);
+                num2=Math.max(la,le,li,lo,lu);
+                    s2="";
+                for(i=num1+1 ; i<num2 ; i++)
+            {
+                s2=s2+s1.charAt(i);
+            }
+                 console.log(s2);
+        </script>
+    </body>
+</html>

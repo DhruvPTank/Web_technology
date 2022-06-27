@@ -1,0 +1,21 @@
+<!-- write a java script to saperate two digit and multiply a first digit for a second number time -->
+
+<html>
+    <head></head>
+    <body>
+        <script>
+            num=prompt("enter the number");
+                    
+                    temp1=parseInt((num/10));     //second digit of a number
+                    temp2=(num%10);     //the last digit of a number
+                // final_answer =Math.pow(temp1,temp2);
+
+                    answer=1;
+                        for(0i=0 ; i<temp2 ; i++)
+                        {
+                            answer= temp1*answer;
+                        }
+                console.log("the answer is" +answer);
+        </script>
+    </body>
+</html>

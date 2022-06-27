@@ -1,0 +1,19 @@
+<!-- write a javascript which uses loop that searches word in sentance -->
+
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            s1=prompt("enter the sentance");
+            s2=prompt("enter the word for search");
+
+            n=s1.indexOf(s2);
+            while(n!=-1)
+            {
+              console.log(n);
+              n=s1.indexOf(s2 , n+1);
+            }
+        </script>
+    </body>
+</html>
